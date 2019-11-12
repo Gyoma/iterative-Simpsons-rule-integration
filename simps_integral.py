@@ -13,8 +13,10 @@ origY = func(origX)
 def simpson_integral(function, start_p, end_p, eps = 0.0001):
     """
     Simpson's rule integration.
-    Number of pieces is a power of 2.
     Returns numeric value of the integral of the given function.  
+    
+    tech:
+    Number of pieces is a power of 2.
     """
     pieces = 2
     offset = (end_p - start_p) / pieces
