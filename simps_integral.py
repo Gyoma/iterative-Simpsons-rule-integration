@@ -26,7 +26,7 @@ def simpson_integral(function, start_p, end_p, eps = 0.0001):
     while True:
         old = integral
         pieces *= 2
-        pos = x[0] + (end_p - start_p) / pieces * 2
+        pos = start_p + (end_p - start_p) / pieces * 2
         offset = (end_p - start_p) / pieces
         integral /= 2
         for i in range(int(pieces / 4)):
